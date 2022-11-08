@@ -17,6 +17,7 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {Provider} from 'react-redux';
 import {store} from './src/app/store';
 import ButtonRedux from './src/components/ButtonRedux';
+import {Contador} from './src/components/contador';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -26,7 +27,7 @@ const App = () => {
       <SafeAreaView>
         <Text>hola </Text>
         <Counter />
-        <ButtonRedux />
+        <Contador />
       </SafeAreaView>
     </Provider>
   );
